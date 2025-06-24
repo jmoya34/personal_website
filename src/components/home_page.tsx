@@ -34,12 +34,13 @@ type NavBarProps = {
     width: number;
     isOverlayOpen: boolean;
     toggleOverlay: () => void;
+    toggleIcon: boolean;
 };
 
-export function NavBar({src, text, height, width, children, isOverlayOpen, toggleOverlay }:NavBarProps){
+export function NavBar({src, text, height, width, children, isOverlayOpen, toggleOverlay, toggleIcon }:NavBarProps){
     return (
         <div>
-            <div className={isOverlayOpen ? 'invisible':''}>
+            <div className={toggleIcon ? 'invisible':''}>
                 <BoxElement 
                     img={src} 
                     text={text} 
