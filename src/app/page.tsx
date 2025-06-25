@@ -1,6 +1,7 @@
 "use client"
 import { BellIcon } from "@/components/sound_button";
 import { AboutInfo }  from "../components/about_page/about_tab";
+import { LinksTab }  from "../components/links_page/links_tab";
 import BackgroundVideo, { BackgroundImg } from "./background";
 import { BoxElement, NavBar } from "@/components/home_page";
 import { useState } from 'react';
@@ -35,12 +36,12 @@ export default function Home() {
           <div className="navbar_padding relative z-20 flex flex-col gap-4">
             {/* Watch out. Using the same toggleOverlay will cause multiple tags to open instead of just one*/}
             <NavBar src="/imgs/about_icon.png" text="about" width={84} height={86} 
-              toggleOverlay={() => toggleOverlay('aboutOverlay')} isOverlayOpen={overlays.aboutOverlay} toggleIcon={isOverlayOpen}> <AboutInfo/> 
-              
+              toggleOverlay={() => toggleOverlay('aboutOverlay')} isOverlayOpen={overlays.aboutOverlay} toggleIcon={isOverlayOpen}> 
+              <AboutInfo/> 
             </NavBar>
             
             <NavBar src="/imgs/messages.png" text="contact" width={85} height={85} 
-              toggleOverlay={() => toggleOverlay('contactOverlay')} isOverlayOpen={overlays.contactOverlay} toggleIcon={isOverlayOpen}>    </NavBar>
+              toggleOverlay={() => toggleOverlay('contactOverlay')} isOverlayOpen={overlays.contactOverlay} toggleIcon={isOverlayOpen}> </NavBar>
             
             <NavBar src="/imgs/projects.png" text="projects" width={84} height={88} 
               toggleOverlay={() => toggleOverlay('projectsOverlay')} isOverlayOpen={overlays.projectsOverlay} toggleIcon={isOverlayOpen}>  </NavBar>
@@ -49,7 +50,9 @@ export default function Home() {
               isOverlayOpen={overlays.documentsOverlay} toggleIcon={isOverlayOpen}>  </NavBar>
             
             <NavBar src="/imgs/links.png" text="links" width={84} height={84} 
-              toggleOverlay={() => toggleOverlay('linksOverlay')} isOverlayOpen={overlays.linksOverlay} toggleIcon={isOverlayOpen}>  </NavBar>
+              toggleOverlay={() => toggleOverlay('linksOverlay')} isOverlayOpen={overlays.linksOverlay} toggleIcon={isOverlayOpen}>
+              <LinksTab/>
+            </NavBar>
           </div>
         </div>
       </main>

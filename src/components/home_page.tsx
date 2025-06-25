@@ -8,7 +8,7 @@ type BoxElementProps = {
     text: string;
     height: number;
     width: number;
-    onClick: () => void;
+    onClick?: () => void;
 };
 
 export function BoxElement({img, text, height, width, onClick}: BoxElementProps){
@@ -16,10 +16,10 @@ export function BoxElement({img, text, height, width, onClick}: BoxElementProps)
     return(
         <>
             <div className="flex items-center">
-                <button className="cursor-pointer" type="button" onClick={onClick}>
+                <button className={!onClick ? "" : "cursor-pointer"} type="button" onClick={onClick} disabled={!onClick}>
                     <img src={img} width={width} height={height}/>
                 </button>
-                <h1 className="side-bar-text text-white text-[2.5rem] ml-2">{text}</h1>
+                <h1 className={!onClick ? "info-title-text text-[2.5rem] ml-2" : "side-bar-text text-white text-[2.5rem] ml-2"}>{text}</h1>
             </div>
         </>
     ); 

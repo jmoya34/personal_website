@@ -11,7 +11,7 @@ export function Overlay({isOpen, onClose, children}: OverlayProps){
         <>
         {
             isOpen ? (
-                <div className="fixed top-0 left-0 w-full h-full z-10 flex items-center justify-center">
+                <div className="fixed top-0 left-0 w-full h-full z-10 flex justify-start">
                     <button onClick={onClose} className="absolute top-4 right-4 z-20">
                         <img className="cursor-pointer hover:opacity-45 w-full h-auto" src='/imgs/close_button.png'/>
                     </button>

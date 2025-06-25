@@ -13,6 +13,13 @@
   font-style: normal;
 }
 
+@font-face{
+  font-family: "GaramondPremrPro";
+  src: url('/fonts/garamond_premr_pro.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -51,4 +58,25 @@ body {
 .side-bar-text{
   font-family: 'MantiniaRegular', ManiniaRegular;
   color: #8C7E61;
+}
+
+.about-text-sizing{
+  width: 100px;
+  height: 10px;
+}
+
+.info-title-text{
+  font-family: 'GaramondPremrPro', GaramondPremrPro;
+  color: #8C7E61;
+}
+
+.info-text{
+  font-family: 'GaramondPremrPro', GaramondPremrPro;
+  font-size: 1.5rem;
+}
+
+.links-text{
+  font-family: 'GaramondPremrPro', GaramondPremrPro;
+  font-size: 2rem;
+  color: #A5A5A3;
 }
