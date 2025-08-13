@@ -1,4 +1,4 @@
-import { BackgroundImg } from "../../app/background";
+import { BackgroundImg } from "../background";
 import { BoxElement } from "../home_page";
 import "../../app/globals.css"
 

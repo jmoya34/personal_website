@@ -80,3 +80,16 @@ body {
   font-size: 2rem;
   color: #A5A5A3;
 }
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #8C7E61;
+  border-radius: 0.25rem;
+  /* background-image: url('/imgs/scroll_thumb.png'); */
+  background-repeat: no-repeat;
+  /* size: 10px; */
+}
