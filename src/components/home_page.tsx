@@ -1,6 +1,4 @@
-import { BackgroundImg } from "@/components/background";
 import { Overlay } from "@/components/Documents_Overlay";
-import { useState } from 'react';
 import { ReactNode } from 'react';
 type BoxElementProps = {
     img: string;

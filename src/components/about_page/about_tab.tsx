@@ -25,7 +25,7 @@ export function AboutInfo(){
 
                             <div className="w-[29.063rem] text-wrap">
                                 <p>
-                                    I have embraced the 'learn by doing' methodology through various projects involving machine learning, TCP networking, GUI scripting, FPGA development, full-stack web development, Flutter with Firebase app development, microcontrollers, and PCB design.
+                                    I have embraced the &apos;learn by doing&apos; methodology through various projects involving machine learning, TCP networking, GUI scripting, FPGA development, full-stack web development, Flutter with Firebase app development, microcontrollers, and PCB design.
                                 </p>
                             </div>
 
@@ -46,7 +46,7 @@ export function AboutInfo(){
                             <h1 className="info-text pt-15 pb-10">Why Elden Ring Inspired?</h1>
                             
                             <p className="info-text max-w-[37.5rem]"> While looking for inspiration for what style of website interested me none satisfied what I was looking for. 
-                                Elden Ring’s beautify in its design captivated me that I desired to create a page using elements from a series dear to me. </p>
+                                Elden Ring&apos;s beautify in its design captivated me that I desired to create a page using elements from a series dear to me. </p>
                         </div>
                     </div>
                 </div>

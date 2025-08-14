@@ -1,6 +1,6 @@
 import { BackgroundImg } from "@/components/background";
 import { BoxElement } from "../home_page";
-import { ContentBox, DocumentsContentBox } from "../content_box";
+import { DocumentsContentBox } from "../content_box";
 import "../../app/globals.css"
 
 export function DocumentsTab(){
